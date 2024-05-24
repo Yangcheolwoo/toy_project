@@ -6,7 +6,15 @@ export default defineConfig({
   resolve: {
     alias: { find: '@', replacement: '/src' },
   },
+
   server: {
+    // proxy: {
+    //   '/api': {
+    //     target: 'https://search.naver.com/',
+    //     changeOrigin: true,
+    //   },
+    // },
+
     port: 3000,
   },
   plugins: [react(), tsconfigPaths()],
