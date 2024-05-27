@@ -14,6 +14,8 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    // Unexpected any. Specify a different type 문구 제거
+    "@typescript-eslint/no-explicit-any": "warn",
     'prettier/prettier': 'error',
   },
 }

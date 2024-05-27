@@ -13,6 +13,7 @@ export const Movie = () => {
     console.log($);
   };
 
+  console.log(import.meta.env.VITE_NAVER_API_KEY);
   return (
     <Flex>
       <Flex>
