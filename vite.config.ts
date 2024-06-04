@@ -7,7 +7,7 @@ export default defineConfig({
 
   server: {
     proxy: {
-      '/api/v1': {
+      '/v1': {
         target: 'https://openapi.naver.com',
         changeOrigin: true,
       },

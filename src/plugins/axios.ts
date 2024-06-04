@@ -2,7 +2,7 @@ import axios, { AxiosError, AxiosResponse } from 'axios';
 import { useEffect } from 'react';
 
 const instance = axios.create({
-  baseURL: 'http://localhost',
+  baseURL: 'http://localhost:3000',
   withCredentials: true,
   headers: {
     'X-Naver-Client-Id': import.meta.env.VITE_NAVER_CLIENT_ID,
@@ -32,11 +32,17 @@ const useAxiosInterceptor = () => {
 
   const responseInterceptor = instance.interceptors.response.use(
     (res) => responseHandler(res),
-    (error) => errorHandler(error),
+    (error) => {
+      console.log('Axios Error! !!');
+      errorHandler(error);
+    },
   );
 
   useEffect(() => {
-    instance.interceptors.response.eject(responseInterceptor);
+    console.log('123');
+    return () => {
+      instance.interceptors.response.eject(responseInterceptor);
+    };
   }, [responseInterceptor]);
 };
 
