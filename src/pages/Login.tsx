@@ -1,6 +1,6 @@
 import { Flex } from '@/components/flex/Flex.tsx';
 import { Text } from '@/components/text/Text.tsx';
-import { Movie } from '@/pages/Movie.tsx';
+import { News } from '@/pages/News.tsx';
 
 export const Login = () => {
   return (
@@ -9,7 +9,7 @@ export const Login = () => {
         <Text fontWeight={'bold'} fontSize={40}>
           로그인
         </Text>
-        <Movie />
+        <News />
       </Flex>
     </Flex>
   );
