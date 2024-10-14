@@ -18,7 +18,8 @@
     "react-dom": "^18.2.0",
     "react-redux": "^9.1.1",
     "redux": "^5.0.1",
-    "styled-components": "^6.1.9"
+    "styled-components": "^6.1.9",
+    "vite-plugin-svgr": "^4.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
@@ -34,5 +35,5 @@
     "vite": "^5.2.0",
     "vite-tsconfig-paths": "^4.3.2"
   },
-  "proxy" : "https://search.naver.com"
+  "proxy": "https://search.naver.com"
 }

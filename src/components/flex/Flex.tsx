@@ -20,7 +20,7 @@ export type FlexProps = {
     | 'row'
     | 'row-reverse'
     | undefined;
-  style?: CSSProperties;
+  css?: CSSProperties;
 };
 export const Flex = React.forwardRef<
   HTMLDivElement,
@@ -38,7 +38,7 @@ export const Flex = React.forwardRef<
       justifyContent = 'flex-start',
       bgColor,
       children,
-      style,
+      css,
       ...props
     },
     ref,
@@ -60,7 +60,7 @@ export const Flex = React.forwardRef<
           justifyContent,
           flexDirection,
           background: bgColor || 'white',
-          ...style,
+          ...css,
         }}
         ref={ref}
         {...props}
