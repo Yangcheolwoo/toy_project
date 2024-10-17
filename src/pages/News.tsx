@@ -24,7 +24,7 @@ export const News = () => {
   };
   return (
     <PageBodyContainer>
-      <Flex css={{ overflowY: 'auto' }}>
+      <Flex height={'100%'} css={{ overflowY: 'auto' }}>
         <NewsList response={response}></NewsList>
       </Flex>
     </PageBodyContainer>

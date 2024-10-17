@@ -5,7 +5,7 @@ import { Text } from '@/components/text/Text.tsx';
 export const NewsList = ({ response }: { response: NewsResponse }) => {
   console.log('response == ', response);
   return (
-    <Flex flexDirection={'column'}>
+    <Flex column>
       {response.items.length > 0 &&
         response.items.map((item) => (
           <Flex

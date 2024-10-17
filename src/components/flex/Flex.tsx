@@ -4,6 +4,8 @@ export type FlexProps = {
   width?: string | number;
   height?: string | number;
   gap?: string | number;
+  column?: boolean;
+  row?: boolean;
   padding?: string;
   margin?: string;
   alignItems?: string;
@@ -30,7 +32,8 @@ export const Flex = React.forwardRef<
     {
       gap: gapValue,
       padding,
-      flexDirection = 'row',
+      column,
+      row,
       width: widthValue,
       height: heightValue,
       margin,
@@ -58,7 +61,7 @@ export const Flex = React.forwardRef<
           padding,
           alignItems,
           justifyContent,
-          flexDirection,
+          flexDirection: column ? 'column' : row ? 'row' : 'row',
           background: bgColor || 'white',
           ...css,
         }}

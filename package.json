@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@stitches/react": "^1.2.8",
     "axios": "^1.7.1",
     "cheerio": "^1.0.0-rc.12",
     "eslint-config-prettier": "^9.1.0",
@@ -18,7 +19,6 @@
     "react-dom": "^18.2.0",
     "react-redux": "^9.1.1",
     "redux": "^5.0.1",
-    "styled-components": "^6.1.9",
     "vite-plugin-svgr": "^4.2.0"
   },
   "devDependencies": {
